@@ -40,7 +40,7 @@ app.get('/api/user', async (req, res) => {
 
 // New endpoint that returns an array with delay
 app.get('/api/products', async (req, res) => {
-  await simulateDelay(3000); // 3 second delay
+  await simulateDelay(1000); // 1 second delay
   res.json([
     { id: 1, name: 'Laptop Pro', price: 1299, category: 'Electronics', inStock: true },
     { id: 2, name: 'Wireless Headphones', price: 199, category: 'Audio', inStock: true },

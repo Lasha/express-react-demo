@@ -82,8 +82,7 @@ function App() {
   useEffect(() => {
     // Check if we're on Netlify or another deployment platform by looking at the hostname
     if (window.location.hostname.includes('netlify.app') || 
-        window.location.hostname.includes('staticblitz.com') ||
-        window.location.hostname !== 'localhost') {
+        window.location.hostname.includes('staticblitz.com')) {
       setIsNetlify(true);
       setIsApiAvailable(false);
       setMessage(FALLBACK_DATA.message);
